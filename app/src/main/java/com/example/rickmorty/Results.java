@@ -5,7 +5,7 @@ public class Results {
     String status;
     String species;
     String gender;
-    Object origin;
+    origin origin;
     String image;
 
 
@@ -25,8 +25,25 @@ public class Results {
         return gender;
     }
 
-    public Object getOrigin()  { return origin;  }
+    public String getOrigin()  { return origin.getName();  }
 
     public String getImage() { return image; }
 
+}
+
+class origin{
+    String name;
+    String url;
+
+    public origin() {
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getUrl() {
+        return url;
+    }
 }
